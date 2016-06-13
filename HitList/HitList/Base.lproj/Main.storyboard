@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,9 +17,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YRu-0e-FZb">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="24" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YRu-0e-FZb">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="18" id="mSE-5X-mng">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mSE-5X-mng" id="N4i-88-PvS">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="17"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="KJj-7w-18l"/>
                                 </connections>
@@ -28,20 +37,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="YRu-0e-FZb" secondAttribute="trailing" constant="-20" id="Yod-YP-RLT"/>
-                            <constraint firstItem="YRu-0e-FZb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="bwo-Bs-6FJ"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YRu-0e-FZb" secondAttribute="bottom" id="nJj-nb-681"/>
-                            <constraint firstItem="YRu-0e-FZb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="uRZ-gS-BfL"/>
+                            <constraint firstItem="YRu-0e-FZb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5x8-uj-Smc"/>
+                            <constraint firstItem="YRu-0e-FZb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ER9-P0-uHK"/>
+                            <constraint firstAttribute="trailing" secondItem="YRu-0e-FZb" secondAttribute="trailing" id="KK3-Fm-zgc"/>
+                            <constraint firstItem="YRu-0e-FZb" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="QF3-Uy-9vh"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="YRu-0e-FZb"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="Yod-YP-RLT"/>
-                                <exclude reference="bwo-Bs-6FJ"/>
-                                <exclude reference="uRZ-gS-BfL"/>
-                                <exclude reference="nJj-nb-681"/>
+                                <exclude reference="5x8-uj-Smc"/>
+                                <exclude reference="ER9-P0-uHK"/>
+                                <exclude reference="KK3-Fm-zgc"/>
+                                <exclude reference="QF3-Uy-9vh"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -49,10 +58,10 @@
                                 <include reference="YRu-0e-FZb"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="Yod-YP-RLT"/>
-                                <include reference="bwo-Bs-6FJ"/>
-                                <include reference="uRZ-gS-BfL"/>
-                                <include reference="nJj-nb-681"/>
+                                <include reference="5x8-uj-Smc"/>
+                                <include reference="ER9-P0-uHK"/>
+                                <include reference="KK3-Fm-zgc"/>
+                                <include reference="QF3-Uy-9vh"/>
                             </mask>
                         </variation>
                     </view>

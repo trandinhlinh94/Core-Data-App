@@ -14,6 +14,8 @@
 		C61A69D91D01B7D8003993D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C61A69D81D01B7D8003993D5 /* Assets.xcassets */; };
 		C61A69DC1D01B7D8003993D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C61A69DA1D01B7D8003993D5 /* LaunchScreen.storyboard */; };
 		C61A69E71D01B7D8003993D5 /* HitListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61A69E61D01B7D8003993D5 /* HitListTests.swift */; };
+		C67B12791D0E7D9F000C9DF0 /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67B12771D0E7D9F000C9DF0 /* Person+CoreDataProperties.swift */; };
+		C67B127A1D0E7D9F000C9DF0 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67B12781D0E7D9F000C9DF0 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		C61A69E21D01B7D8003993D5 /* HitListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HitListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C61A69E61D01B7D8003993D5 /* HitListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HitListTests.swift; sourceTree = "<group>"; };
 		C61A69E81D01B7D8003993D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C67B12771D0E7D9F000C9DF0 /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C67B12781D0E7D9F000C9DF0 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 		C61A69C21D01B7D8003993D5 = {
 			isa = PBXGroup;
 			children = (
+				C67B12771D0E7D9F000C9DF0 /* Person+CoreDataProperties.swift */,
+				C67B12781D0E7D9F000C9DF0 /* Person.swift */,
 				C61A69CD1D01B7D8003993D5 /* HitList */,
 				C61A69E51D01B7D8003993D5 /* HitListTests */,
 				C61A69CC1D01B7D8003993D5 /* Products */,
@@ -202,6 +208,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C67B127A1D0E7D9F000C9DF0 /* Person.swift in Sources */,
+				C67B12791D0E7D9F000C9DF0 /* Person+CoreDataProperties.swift in Sources */,
 				C61A69D71D01B7D8003993D5 /* HitList.xcdatamodeld in Sources */,
 				C61A69D11D01B7D8003993D5 /* ViewController.swift in Sources */,
 				C61A69CF1D01B7D8003993D5 /* AppDelegate.swift in Sources */,
@@ -396,6 +404,7 @@
 				C61A69ED1D01B7D8003993D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C61A69EE1D01B7D8003993D5 /* Build configuration list for PBXNativeTarget "HitListTests" */ = {
 			isa = XCConfigurationList;
@@ -404,6 +413,7 @@
 				C61A69F01D01B7D8003993D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
