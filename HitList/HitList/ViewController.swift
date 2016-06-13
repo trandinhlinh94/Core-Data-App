@@ -79,6 +79,29 @@ class ViewController: UIViewController, UITableViewDataSource  {
         title = "\"The List\""
         tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "Cell")
     }
+    
+    // Fetching records from persistent store into the context
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // grab the reference of the AppDelegate.swift
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        
+        let managedContext = appDelegate.managedObjectContext
+        
+        //NSFetchRequest class is responsible for fetching from Core Data
+        let fetchRequest = NSFetchRequest(entityName: "Person")
+        
+        do {
+            // execute the fetch request
+            let results = try managedContext.executeFetchRequest(fetchRequest)
+            
+            // push values into people array and convert it as NSManagedObject
+            people = results as! [NSManagedObject]
+        } catch let error as NSError {
+            print("Could not fetch \(error), \(error.userInfo)")
+        }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
